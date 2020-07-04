@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ------- Mac Sparse Bundle mounting script for Apple Pro Apps ------- #
-# ----------- Created by Tom Pearce - tom@themacguy.rocks ------------ #
+# ------------ Created by TheMacGuy - tom@themacguy.rocks ------------ #
 
 #Variables
 loggedInUser=$(/bin/ls -l /dev/console | /usr/bin/awk '{ print $3 }') #Gets content for variable to get the username
