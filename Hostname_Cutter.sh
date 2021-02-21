@@ -5,6 +5,7 @@
 
 # This script can be used to cut down the existing hostname by X numbers
 
-number_cut=5
+#Uncomment if using independently
+#number_cut=5
 
 newhostname=$(scutil --get ComputerName | cut -c $number_cut- ) && sudo scutil --set HostName $newhostname && sudo scutil --set LocalHostName $newhostname && sudo scutil --set ComputerName $newhostname
