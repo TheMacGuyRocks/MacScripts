@@ -1,4 +1,8 @@
 #!/bin/bash
+
+# --------- Syncronise Hostname based on record in Jamf Pro ---------- #
+# ------------ Created by TheMacGuy - tom@themacguy.rocks ------------ #
+
 #This script is useful for updating a Mac's name via Jamf Pro. This ensures the 'Sharing Name' and Hostname are syncronised. Useful if you then use information such as $HostName for a login banner
 
 yourResetPolicy="myResetEvent" #Create a policy that resets the computer name set a 'Custom Event' trigger for example 'resetComputerName'
