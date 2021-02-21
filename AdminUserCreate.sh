@@ -16,5 +16,5 @@ dscl . -create /Users/$username PrimaryGroupID 20
 dscl . -create /Users/$username NFSHomeDirectory /Users/$username
 dscl . -passwd /Users/$username $password 
 
-#Uncomment to make admin
-#dscl . -append /Groups/admin GroupMembership $username
+#Comment to make make standard user
+dscl . -append /Groups/admin GroupMembership $username
