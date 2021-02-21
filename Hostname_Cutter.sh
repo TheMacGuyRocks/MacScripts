@@ -1,5 +1,8 @@
-# Hostname Cutter Script
-# Tom Pearce 2021
+#!/bin/bash
+
+# ------- Cut the current hostname down (from the front) by X -------- #
+# ------------ Created by TheMacGuy - tom@themacguy.rocks ------------ #
+
 # This script can be used to cut down the existing hostname by X numbers
 
 number_cut=5
