@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo profiles -D
+yes | sudo profiles -D
