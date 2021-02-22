@@ -9,3 +9,4 @@
 #number_cut=5
 
 newhostname=$(scutil --get ComputerName | cut -c $number_cut- ) && sudo scutil --set HostName $newhostname && sudo scutil --set LocalHostName $newhostname && sudo scutil --set ComputerName $newhostname
+exit

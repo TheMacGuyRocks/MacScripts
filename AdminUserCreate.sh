@@ -18,3 +18,5 @@ sudo dscl . -passwd /Users/$username $password
 
 #Comment to make make standard user
 sudo dscl . -append /Groups/admin GroupMembership $username
+
+exit

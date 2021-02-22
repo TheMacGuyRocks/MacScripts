@@ -8,3 +8,4 @@ touch "/Library/Application Support/Avid/Sibelius/_manuscript/LicenceServerInfo"
 
 echo "$hostname:7312">"/Library/Application Support/Avid/Sibelius/_manuscript/LicenceServerInfo"
 sudo defaults write /Library/LaunchAgents/com.avid.ApplicationManager.plist RunAtLoad -boolean false
+exit
