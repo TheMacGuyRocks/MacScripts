@@ -1,8 +1,10 @@
 #!/bin/bash
 
 #Uncomment if using independently
-#username=theusername
-#password="password1"
+username="macadmin"
+displayname="Mac Admin"
+
+password="password1"
 
 #Ensures unique ID is next available
 MAXID=$(dscl . -list /Users UniqueID | awk '{print $2}' | sort -ug | tail -1)
@@ -10,7 +12,7 @@ USERID=$((MAXID+1))
 
 sudo dscl . -create /Users/$username
 sudo dscl . -create /Users/$username UserShell /bin/bash
-sudo dscl . -create /Users/$username RealName $username 
+sudo dscl . -create /Users/$username RealName "$displayname"
 sudo dscl . -create /Users/$username UniqueID $USERID
 sudo dscl . -create /Users/$username PrimaryGroupID 20
 sudo dscl . -create /Users/$username NFSHomeDirectory /Users/$username
