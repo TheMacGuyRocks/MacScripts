@@ -5,6 +5,12 @@
 
 # -------------- This Script relies on Native AD Binding ------------- #
 
+#Add Logging
+exec >> /usr/local/themacguy/homedrive.log 2>&1
+echo "--Home Drive Run--"
+date
+
+
 # Mount Network Home Folder and Create Links
 
 theUserName=$(/usr/bin/stat -f%Su /dev/console)
@@ -21,6 +27,11 @@ myHomeFolderSMB=$(/bin/echo "$noSpaces")
 
 #The location of Mysides
 MYSIDES="/usr/local/bin/mysides"
+
+echo "Their Username: $theUserName"
+echo "their path $myHomeFolderSMB"
+
+/bin/sleep 1
 
 #Get check if the user is a local user.
 dscl /Local/Default -list Users | grep $USER &> /dev/null
@@ -48,8 +59,12 @@ else
 	/bin/unlink ~/MyNetworkHome
 	mkdir -p ~/MyNetworkHome
 
+	/bin/sleep 1
+
 	# Mount the network home folder
 	/sbin/mount_smbfs $myHomeFolderSMB /Users/$theUserName/MyNetworkHome
+
+	/bin/sleep 2
 
 	# Create the symbolic links
 		mkdir ~/MyNetworkHome/Documents
