@@ -17,7 +17,6 @@ noSpaces=$(echo $cleanSmbPath | sed 's/ /%20/')
 
 dscl /Local/Default -list Users | grep $USER &> /dev/null
 if [ $? == 0 ]; then
-	echo "nothing to be done"
 else
 
 # Remove existing link folders
