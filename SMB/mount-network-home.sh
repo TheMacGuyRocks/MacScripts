@@ -93,6 +93,7 @@ else
 		echo "Sleeping"
 		sleep 2
 		MYSIDES remove all #Clears all items in the sidebar
+		sleep 1
 		MYSIDES add Home file:///Users/$theUserName/MyNetworkHome #Adds User Home
 		MYSIDES add Documents file:///Users/$theUserName/MyNetworkHome/Documents #Adds Documents
 		MYSIDES add Desktop file:///Users/$theUserName/MyNetworkHome/Desktop #Adds Desktop
