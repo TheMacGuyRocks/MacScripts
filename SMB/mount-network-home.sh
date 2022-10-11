@@ -44,6 +44,7 @@ if [ $? == 0 ]; then
 	MYSIDES add Documents file:///Users/$USER/Documents #Adds Documents
 	MYSIDES add Desktop file:///Users/$USER/Desktop #Adds Desktop
 	MYSIDES add Pictures file:///Users/$USER/Pictures #Adds Pictures
+	MYSIDES add Music file:///Users/$USER/Music #Adds Movies
 	MYSIDES add Movies file:///Users/$USER/Movies #Adds Movies
 	MYSIDES add Applications file:///Applications #Adds Applications
 else
